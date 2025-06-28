@@ -135,6 +135,9 @@ const Navbar = () => {
                 {/* Menu mobile drop down */}
                 <div className={`transition-all duration-500 ease-in-out transform origin-top overflow-hidden ${menuOpen ? 'opacity-100 translate-y-0 max-h-[400px] mt-4' : 'opacity-0 -translate-y-2 max-h-0'}`}>
                     <div className="flex flex-col lg:hidden w-full gap-4 py-4 px-4">
+                        <button onClick={() => navigate("/admin/Manage")} className='flex items-center font-semibold text-blue-950 hover:text-blue-600 active:text-blue-600 uppercase text-sm cursor-pointer'>
+                            home
+                        </button>
                         {
                             menus.map((menu, index) => (
                                 <div key={index}>
