@@ -55,6 +55,9 @@ const Post = () => {
                         />
                     </div>
                 </div>
+                <div className="w-full mt-4">
+                    <button className="w-full uppercase bg-gradient-to-r from-blue-600 to-sky-400 hover:from-blue-800 hover:to-sky-600 active:from-blue-800 active:to-sky-600 p-2 font-semibold hover:bg-black active:bg-black transition-colors duration-300 shadow-sm cursor-pointer">Add Post</button>
+                </div>
             </form>
         </div>
     );
