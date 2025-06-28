@@ -1,0 +1,63 @@
+const Post = () => {
+    return (  
+        <div className="w-full">
+            <form action="">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-2">
+                    <div className="mb-4 w-full">
+                        <div className="mt-2 bg-gray-50 border border-gray-300 rounded-md p-2 w-full">
+                            <select className="outline-0 w-full pl-4 pr-2 bg-transparent text-gray-500">
+                                <option value="" disabled selected>Category</option>
+                                    <option value="education">technology</option>
+                                    <option value="education">world</option>
+                                    <option value="education">energy</option>
+                                    <option value="education">ai</option>
+                                    <option value="education">education</option>
+                                    <option value="education">finance</option>
+                                    <option value="education">health</option>
+                                    <option value="education">sports</option>
+                                    <option value="education">culture</option>
+                                    <option value="education">education</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="mb-4 w-full">
+                        <div className="mt-2 bg-gray-50 border border-gray-300 rounded-md p-2 w-full">
+                            <input
+                                type="text"
+                                placeholder="Title"
+                                className="outline-0 w-full pl-4 placeholder-gray-500 text-gray-900"
+                            />
+                        </div>
+                    </div>
+                    <div className="mb-4 w-full">
+                        <div className="mt-2 bg-gray-50 border border-gray-300 rounded-md p-2 w-full">
+                            <textarea
+                                type="text" placeholder="Details"
+                                className="outline-0 w-full pl-4 placeholder-gray-500 text-gray-900">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div className="mb-4 w-full">
+                        <div className="mt-2 bg-gray-50 border border-gray-300 rounded-md p-2 w-full">
+                            <textarea
+                                type="text" placeholder="Description"
+                                className="outline-0 w-full pl-4 placeholder-gray-500 text-gray-900">
+                            </textarea>
+                        </div>
+                    </div>
+                </div>    
+                <div className="max-w-xl mx-auto">
+                    <div className="mt-2 bg-gray-50 border border-gray-300 rounded-md p-2 w-full">
+                        <input
+                            type="file"
+                            className="outline-0 w-full pl-2 text-gray-500 cursor-pointer"
+                            accept="image/*"
+                        />
+                    </div>
+                </div>
+            </form>
+        </div>
+    );
+}
+ 
+export default Post;
