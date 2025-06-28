@@ -7,16 +7,15 @@ const Post = () => {
                         <div className="mt-2 bg-gray-50 border border-gray-300 rounded-md p-2 w-full">
                             <select className="outline-0 w-full pl-4 pr-2 bg-transparent text-gray-500">
                                 <option value="" disabled selected>Category</option>
-                                    <option value="education">technology</option>
-                                    <option value="education">world</option>
-                                    <option value="education">energy</option>
-                                    <option value="education">ai</option>
+                                    <option value="technology">technology</option>
+                                    <option value="world">world</option>
+                                    <option value="energy">energy</option>
+                                    <option value="ai">ai</option>
                                     <option value="education">education</option>
-                                    <option value="education">finance</option>
-                                    <option value="education">health</option>
-                                    <option value="education">sports</option>
-                                    <option value="education">culture</option>
-                                    <option value="education">education</option>
+                                    <option value="finance">finance</option>
+                                    <option value="health">health</option>
+                                    <option value="sports">sports</option>
+                                    <option value="culture">culture</option>
                             </select>
                         </div>
                     </div>
