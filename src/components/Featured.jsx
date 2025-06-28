@@ -24,12 +24,12 @@ const Featured = () => {
                                     <span className="flex items-center gap-2">
                                         <span className="text-sm font-mono text-gray-400">{news.date}</span>
                                         <span className="text-sm text-gray-400 font-semibold">-</span>
-                                        <span className="text-sm text-blue-700 hover:text-blue-800 hover:scale-105 transition duration-200 font-semibold uppercase cursor-pointer">{news.category}</span>
+                                        <span className="text-sm text-blue-700 hover:text-blue-800 hover:scale-105 active:scale-105 transition duration-200 font-semibold uppercase cursor-pointer">{news.category}</span>
                                     </span>
                                     <p className="text-lg font-semibold text-gray-950">{news.title}</p>
                                     <p className="text-md text-gray-900">{news.preview}..</p>
                                     <span className="w-fit border-b border-blue-700">
-                                        <p onClick={() => navigate(`/ArticleDetail/${news.id}`)} className="text-sm text-gray-950 cursor-pointer hover:text-blue-700 hover:scale-105 transition duration-200">Read More</p>
+                                        <p onClick={() => navigate(`/ArticleDetail/${news.id}`)} className="text-sm text-gray-950 cursor-pointer hover:text-blue-700 hover:scale-105 active:scale-105 transition duration-200">Read More</p>
                                     </span>
                                 </div>
                             </div>
