@@ -1,6 +1,7 @@
 import { useAllNews } from "../context/NewsContext";
 import Sidebar from "./Sidebar";
 import { useNavigate } from "react-router-dom"
+import { useState } from "react";
 
 
 const Featured = () => {
