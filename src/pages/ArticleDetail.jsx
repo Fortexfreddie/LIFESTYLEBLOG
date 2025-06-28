@@ -47,30 +47,29 @@ const ArticleDetail = () => {
                 <div className="container mx-auto">
                     <div className="flex flex-col p-6 gap-10">
                         <div className="mt-10 flex flex-col gap-4">
-                            <span className="uppercase py-1 px-2 bg-blue-600 hover:bg-blue-800 transition-all duration-300 text-xs font-medium tracking-wide shadow-sm w-fit">{post.category}</span>
+                            <span className="uppercase py-1 px-2 bg-blue-600 hover:bg-blue-800 active:bg-blue-800 transition-all duration-300 text-xs font-medium tracking-wide shadow-sm w-fit">{post.category}</span>
                             <h1 className="text-2xl md:text-4xl text-blue-950 font-semibold max-w-4xl">{post.title}</h1>
                             <p className="text-gray-500">{post.preview}</p>
                             <span className="flex items-center gap-2">
                                 <span className="text-sm font-mono text-gray-400">{post.date}</span>
                                 <span className="text-sm text-gray-400 font-semibold">-</span>
-                                <span className="text-sm text-[#505050] hover:text-blue-800 hover:scale-105 transition duration-200 uppercase cursor-pointer">{post.comments} comments</span>
+                                <span className="text-sm text-[#505050] hover:text-blue-800 active:text-blue-800 hover:scale-105 active:scale-105 transition duration-200 uppercase cursor-pointer">{post.comments} comments</span>
                             </span>
                             <div className="flex gap-2 w-full my-4">
-                                <button className="hidden lg:flex items-center justify-center gap-4 px-10 py-2 bg-[#1877F2] hover:bg-[#166FE5] transition duration-300 rounded-md shadow-md hover:scale-105 cursor-pointer"><FaFacebook className="h-5 w-5" /> <span>1.1K Fans</span></button>
-                                <button className="hidden lg:flex items-center justify-center gap-4 px-10 py-2 bg-[#000000] hover:bg-[#1a1a1a] transition duration-300 rounded-md shadow-md hover:scale-105 cursor-pointer"><FaXTwitter className="h-5 w-5" /> <span>68.9K Fans</span></button>
+                                <button className="hidden lg:flex items-center justify-center gap-4 px-10 py-2 bg-[#1877F2] hover:bg-[#166FE5] transition duration-300 rounded-md shadow-md hover:scale-105 active:scale-105 cursor-pointer"><FaFacebook className="h-5 w-5" /> <span>1.1K Fans</span></button>
+                                <button className="hidden lg:flex items-center justify-center gap-4 px-10 py-2 bg-[#000000] hover:bg-[#1a1a1a] transition duration-300 rounded-md shadow-md hover:scale-105 active:scale-105 cursor-pointer"><FaXTwitter className="h-5 w-5" /> <span>68.9K Fans</span></button>
 
-                                <button className="flex lg:hidden px-4 py-3 bg-[#1877F2] hover:bg-[#166FE5] transition duration-300 rounded-md shadow-md hover:scale-105 cursor-pointer"><FaFacebook className="h-5 w-5" /></button>
-                                <button className="flex lg:hidden px-4 py-3 bg-[#000000] hover:bg-[#1a1a1a] transition duration-300 rounded-md shadow-md hover:scale-105 cursor-pointer"><FaXTwitter className="h-5 w-5" /></button>
+                                <button className="flex lg:hidden px-4 py-3 bg-[#1877F2] hover:bg-[#166FE5] active:bg-[#166FE5] transition duration-300 rounded-md shadow-md hover:scale-105 active:scale-105 cursor-pointer"><FaFacebook className="h-5 w-5" /></button>
+                                <button className="flex lg:hidden px-4 py-3 bg-[#000000] hover:bg-[#1a1a1a] active:bg-[#1a1a1a] transition duration-300 rounded-md shadow-md hover:scale-105 active:scale-105 cursor-pointer"><FaXTwitter className="h-5 w-5" /></button>
 
-                                <button onClick={() => setShowSocials(true)} className={`${showSocials ? `hidden` : `flex`} px-3 py-3 bg-[#aaaaaa] transition duration-300 rounded-md shadow-md hover:scale-105 cursor-pointer`}><FaPlus className="h-5 w-5" /></button>
+                                <button onClick={() => setShowSocials(true)} className={`${showSocials ? `hidden` : `flex`} px-3 py-3 bg-[#aaaaaa] transition duration-300 rounded-md shadow-md hover:scale-105 active:scale-105 cursor-pointer`}><FaPlus className="h-5 w-5" /></button>
 
                                 <span className={`${showSocials ? `flex` : `hidden`} w-fit gap-2`}>
-                                    <button className="px-4 py-3 bg-[#E60023] hover:bg-[#cc001f] transition duration-300 rounded-md shadow-md hover:scale-105 cursor-pointer"><FaPinterest className="h-5 w-5" /></button>
-                                    <button className="px-4 py-3 bg-[#02669a] hover:bg-[#005983] transition duration-300 rounded-md shadow-md hover:scale-105 cursor-pointer"><FaLinkedin className="h-5 w-5" /></button>
-                                    <button className="px-4 py-3 bg-[#FF0000] hover:bg-[#cc0000] transition duration-300 rounded-md shadow-md hover:scale-105 cursor-pointer"><FaYoutube className="h-5 w-5" /></button>
-                                    <button className="px-4 py-3 bg-[#19232d] hover:bg-[#1a1a1a] transition duration-300 rounded-md shadow-md hover:scale-105 cursor-pointer"><FaEnvelope className="h-5 w-5" /></button>
+                                    <button className="px-4 py-3 bg-[#E60023] hover:bg-[#cc001f] active:bg-[#cc001f] transition duration-300 rounded-md shadow-md hover:scale-105 active:scale-105 cursor-pointer"><FaPinterest className="h-5 w-5" /></button>
+                                    <button className="px-4 py-3 bg-[#02669a] hover:bg-[#005983] active:bg-[#005983] transition duration-300 rounded-md shadow-md hover:scale-105 active:scale-105 cursor-pointer"><FaLinkedin className="h-5 w-5" /></button>
+                                    <button className="px-4 py-3 bg-[#FF0000] hover:bg-[#cc0000] active:bg-[#cc0000] transition duration-300 rounded-md shadow-md hover:scale-105 active:scale-105 cursor-pointer"><FaYoutube className="h-5 w-5" /></button>
+                                    <button className="px-4 py-3 bg-[#19232d] hover:bg-[#1a1a1a] active:bg-[#1a1a1a] transition duration-300 rounded-md shadow-md hover:scale-105 active:scale-105 cursor-pointer"><FaEnvelope className="h-5 w-5" /></button>
                                 </span>
-                                <button onClick={() => setShowSocials(false)} className={`${showSocials ? `flex` : `hidden`} px-3 py-3 bg-[#aaaaaa] transition duration-300 rounded-md shadow-md hover:scale-105 cursor-pointer`}><FaMinus className="h-5 w-5" /></button>
                             </div>
                         </div>
                         <BlogDetail post={post} />

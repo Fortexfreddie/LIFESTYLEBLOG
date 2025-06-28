@@ -11,7 +11,7 @@ const LatestPosts = () => {
                             <img src={news.image} alt={news.category} loading="lazy" className="h-full max-h-36 w-full object-center object-cover" />
                         </div>
                         <div className="flex flex-col w-[70%] justify-center gap-2">
-                            <p className="text-xs text-white font-semibold cursor-pointer hover:text-[#dddddd] transition-colors duration-200">{news.title}</p>
+                            <p className="text-xs text-white font-semibold cursor-pointer hover:text-[#dddddd] active:text-[#dddddd] transition-colors duration-200">{news.title}</p>
                             <span className="text-xs font-mono text-[#707070] uppercase">{news.date}</span>
                         </div>
                     </div>

@@ -1,6 +1,5 @@
 import Sidebar from "./Sidebar";
 import culture from "../assets/images/unsplash_culture.webp";
-import world from "../assets/images/unsplash_world.webp";
 import author from "../assets/images/author.jpg";
 import { FaXTwitter, FaFacebook, FaInstagram } from 'react-icons/fa6';
 
@@ -34,7 +33,7 @@ const BlogDetail = ({ post }) => {
                             </div>
                             <span className="text-lg text-gray-900 flex flex-col gap-8">
                                 <p>You see the holiday season approaching on the calendar, and suddenly, you find yourself in action mode. You’re scrolling through your favorite online stores, flagging items that might make the perfect gift for your adored ones.</p>
-                                <p>Also Read: <span className="text-blue-500 hover:text-blue-700 transition-colors duration-200 cursor-pointer">Lagos Hosts West Africa’s First Digital Art Biennale</span></p>
+                                <p>Also Read: <span className="text-blue-500 hover:text-blue-700 active:text-blue-700 transition-colors duration-200 cursor-pointer">Lagos Hosts West Africa’s First Digital Art Biennale</span></p>
                             </span>
                         </span>
                         <div className="h-72 md:h-[400px] w-full rounded-md overflow-hidden shadow-md">
@@ -50,9 +49,9 @@ const BlogDetail = ({ post }) => {
                             <p className="text-xl font-semibold text-gray-900">Shane Doe</p>
                             <p className="mt-2 text-center text-md text-gray-800">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
                             <span className="flex items-center text-gray-400 space-x-1 mt-2">
-                                <FaFacebook className="hover:text-gray-600 transition-colors duration-300 cursor-pointer" />
-                                <FaXTwitter className="hover:text-gray-600 transition-colors duration-300 cursor-pointer" />
-                                <FaInstagram className="hover:text-gray-600 transition-colors duration-300 cursor-pointer" />
+                                <FaFacebook className="hover:text-gray-600 active:text-gray-600 transition-colors duration-300 cursor-pointer" />
+                                <FaXTwitter className="hover:text-gray-600 active:text-gray-600 transition-colors duration-300 cursor-pointer" />
+                                <FaInstagram className="hover:text-gray-600 active:text-gray-600 transition-colors duration-300 cursor-pointer" />
                             </span>
                         </span>
                     </div>

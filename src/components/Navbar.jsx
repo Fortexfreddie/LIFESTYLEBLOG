@@ -85,15 +85,15 @@ const Navbar = () => {
                         </div>
                         <div className='flex lg:hidden items-center'>
                             <span onClick={() => setMenuOpen(!menuOpen)} className='cursor-pointer text-black lg:text-white'>
-                                { menuOpen ? <HiX className='h-5 w-5' /> : <HiMenu className='hover:text-blue-950 h-5 w-5' /> }
+                                { menuOpen ? <HiX className='h-5 w-5' /> : <HiMenu className='hover:text-blue-950 active:text-blue-950 h-5 w-5' /> }
                             </span>
                         </div>
                         <div className="flex items-center space-x-2 p-3 text-black lg:text-white">
-                            <span className='cursor-pointer hover:animate-spin'><FaFacebookSquare className='hover:text-blue-950' /></span>
-                            <span className='cursor-pointer hover:animate-spin'><FaInstagram className='hover:text-blue-950' /></span>
-                            <span className='cursor-pointer hover:animate-spin'><FaXTwitter className='hover:text-blue-950' /></span>
-                            <span className='cursor-pointer hover:animate-spin'><FaTiktok className='hover:text-blue-950' /></span>
-                            <span className='cursor-pointer hover:animate-spin'><FaPinterest className='hover:text-blue-950' /></span>
+                            <span className='cursor-pointer hover:animate-spin active:animate-spin'><FaFacebookSquare className='hover:text-blue-950 active:text-blue-950' /></span>
+                            <span className='cursor-pointer hover:animate-spin active:animate-spin'><FaInstagram className='hover:text-blue-950 active:text-blue-950' /></span>
+                            <span className='cursor-pointer hover:animate-spin active:animate-spin'><FaXTwitter className='hover:text-blue-950 active:text-blue-950' /></span>
+                            <span className='cursor-pointer hover:animate-spin active:animate-spin'><FaTiktok className='hover:text-blue-950 active:text-blue-950' /></span>
+                            <span className='cursor-pointer hover:animate-spin active:animate-spin'><FaPinterest className='hover:text-blue-950 active:text-blue-950' /></span>
                         </div>
                     </div>
                 </div>
@@ -101,13 +101,13 @@ const Navbar = () => {
                     <div className='flex items-center gap-20'>
                         <h1 className='text-4xl lg:text-5xl text-blue-950 font-bold uppercase animate'>lifesty<span className='inline-block rotate-45 animate-bounce'>le</span></h1>
                         <div className='hidden lg:flex items-center gap-6'>
-                            <button onClick={() => navigate("/admin/Manage")} className='flex items-center font-semibold text-blue-950 hover:text-blue-600 uppercase text-sm cursor-pointer'>
+                            <button onClick={() => navigate("/admin/Manage")} className='flex items-center font-semibold text-blue-950 hover:text-blue-600 active:text-blue-600 uppercase text-sm cursor-pointer'>
                                 home
                             </button>
                             {
                                 menus.map((menu, index) => (
                                     <div key={index} className='relative'>
-                                        <button onMouseEnter={() => setActiveSubmenu(menu.name)} onMouseLeave={() => setActiveSubmenu(null)} className='flex items-center gap-1 font-semibold text-blue-950 hover:text-blue-600 uppercase text-sm cursor-pointer'>
+                                        <button onMouseEnter={() => setActiveSubmenu(menu.name)} onMouseLeave={() => setActiveSubmenu(null)} className='flex items-center gap-1 font-semibold text-blue-950 hover:text-blue-600 active:text-blue-600 uppercase text-sm cursor-pointer'>
                                             {menu.name} { activeSubmenu === menu.name ? <FaChevronUp className="text-xs mt-0.5" /> : <FaChevronDown className="text-xs mt-0.5" /> }
                                         </button>
                                         <div onMouseEnter={() => setActiveSubmenu(menu.name)} onMouseLeave={() => setActiveSubmenu(null)} className={`absolute z-10 mt-2 w-48 bg-white shadow-lg rounded-md transition-all duration-200 overflow-hidden
@@ -115,7 +115,7 @@ const Navbar = () => {
                                             <ul className='flex flex-col text-sm text-gray-800'>
                                                 {
                                                     menu.list.map((item, index) => (
-                                                        <li key={index} className="px-4 py-2 hover:bg-gray-100 cursor-pointer">{item}</li>
+                                                        <li key={index} className="px-4 py-2 hover:bg-gray-100 active:bg-gray-100 cursor-pointer">{item}</li>
                                                     ))
                                                 }
                                             </ul>
@@ -126,7 +126,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className='hidden lg:flex items-center'>
-                        <span onClick={() => setShowSearch(!showSearch)} className='bg-blue-100 hover:bg-blue-200 text-blue-950 p-2 rounded-full cursor-pointer'>
+                        <span onClick={() => setShowSearch(!showSearch)} className='bg-blue-100 hover:bg-blue-200 active:bg-blue-200 text-blue-950 p-2 rounded-full cursor-pointer'>
                             { showSearch ? <HiX /> : <FaSearch />}
                         </span>
                     </div>
@@ -138,7 +138,7 @@ const Navbar = () => {
                         {
                             menus.map((menu, index) => (
                                 <div key={index}>
-                                    <button onClick={() => toggleSubmenu(menu.name)} className='flex items-center gap-1 font-semibold text-blue-950 hover:text-blue-600 uppercase text-sm cursor-pointer'>
+                                    <button onClick={() => toggleSubmenu(menu.name)} className='flex items-center gap-1 font-semibold text-blue-950 hover:text-blue-600 active:text-blue-600 uppercase text-sm cursor-pointer'>
                                         {menu.name} { activeSubmenu === menu.name ? <FaChevronUp className="text-xs mt-0.5" /> : <FaChevronDown className="text-xs mt-0.5" /> }
                                     </button>
                                     <div className={`w-full mt-2 bg-white shadow-sm rounded-md transition-all duration-200 overflow-hidden
@@ -146,7 +146,7 @@ const Navbar = () => {
                                         <ul className='flex flex-col text-sm text-gray-800'>
                                             {
                                                 menu.list.map((item, index) => (
-                                                    <li key={index} className="px-4 py-2 hover:bg-gray-100 cursor-pointer">{item}</li>
+                                                    <li key={index} className="px-4 py-2 hover:bg-gray-100 active:bg-gray-100 cursor-pointer">{item}</li>
                                                 ))
                                             }
                                         </ul>

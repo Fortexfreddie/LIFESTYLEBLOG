@@ -18,7 +18,7 @@ const Featured = () => {
                         allNews.slice(0, 7).map((news, index) => (
                             <div key={index} className="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <div className="h-64 md:h-auto flex flex-col items-center rounded-md overflow-hidden shadow-md">
-                                    <img src={news.image} alt={news.category} loading="lazy" className="h-full lg:max-h-72 w-full object-cover object-center hover:scale-105 transition duration-300" />
+                                    <img src={news.image} alt={news.category} loading="lazy" className="h-full lg:max-h-72 w-full object-cover object-center hover:scale-105 active:scale-105 transition duration-300" />
                                 </div>
                                 <div className="flex flex-col justify-center gap-4">
                                     <span className="flex items-center gap-2">
@@ -36,7 +36,7 @@ const Featured = () => {
                         ))
                     }
                     <div className="w-full mt-4">
-                        <button className="w-full uppercase bg-gradient-to-r from-blue-600 to-sky-400 hover:from-blue-800 hover:to-sky-600 p-3 font-semibold hover:bg-black transition-colors duration-300 shadow-sm cursor-pointer">load more</button>
+                        <button className="w-full uppercase bg-gradient-to-r from-blue-600 to-sky-400 hover:from-blue-800 hover:to-sky-600 active:from-blue-800 active:to-sky-600 p-3 font-semibold hover:bg-black active:bg-black transition-colors duration-300 shadow-sm cursor-pointer">load more</button>
                     </div>
                 </div>
                 <div className="w-full xl:w-[30%]">
