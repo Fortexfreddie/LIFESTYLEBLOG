@@ -23,12 +23,12 @@ const BlogDetail = ({ post }) => {
                                 <p>You see the holiday season approaching on the calendar, and suddenly, you find yourself in action mode. You’re scrolling through your favorite online stores, flagging items that might make the perfect gift for your adored ones.</p>
                                 <p>You’re shaking the dust off the decorations that have been tucked in the basement for the last 12 months.</p>
                             </span>
-                            <div class="max-w-2xl mx-auto">
-                                <div class="relative pl-10 text-gray-800 text-2xl font-serif">
-                                    <span class="absolute left-0 top-0 text-7xl text-blue-600">“</span>
+                            <div className="max-w-2xl mx-auto">
+                                <div className="relative pl-10 text-gray-800 text-2xl font-serif">
+                                    <span className="absolute left-0 top-0 text-7xl text-blue-600">“</span>
                                     <p>He’s so similar to me. In person, we’re just weird and silly and stupid together. He makes me the happiest I’ve ever been in my life.
                                     </p>
-                                    <p class="mt-4 text-sm text-gray-400 uppercase tracking-wider">- Shane Doe</p>
+                                    <p className="mt-4 text-sm text-gray-400 uppercase tracking-wider">- Shane Doe</p>
                                 </div>
                             </div>
                             <span className="text-lg text-gray-900 flex flex-col gap-8">
