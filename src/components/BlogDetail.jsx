@@ -11,7 +11,7 @@ const BlogDetail = ({ post }) => {
     return (  
         <div className="flex flex-col items-center gap-10">
             <div className="flex flex-col xl:flex-row gap-10 w-full md:w-[90%] lg:w-full">
-                <div className="w-full xl:w-[70%] flex flex-col gap-14 md:gap-10">
+                <div className="w-full xl:w-[70%] flex flex-col gap-6 md:gap-10">
                     <div className="h-72 md:h-[400px] w-full rounded-md overflow-hidden shadow-md">
                         <img src={post.image} alt="" className="object-center object-cover w-full h-full" />
                     </div>

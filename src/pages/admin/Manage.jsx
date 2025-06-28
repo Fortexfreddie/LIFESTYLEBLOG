@@ -32,7 +32,7 @@ const Manage = () => {
                         <div className="w-full xl:w-[70%] flex flex-col gap-14 md:gap-10">
                             {
                                 allNews.slice(0, visiblePosts).map((news, index) => (
-                                    <div key={index} className="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
+                                    <div key={index} className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
                                         <div className="h-64 md:h-auto flex flex-col items-center rounded-md overflow-hidden shadow-md">
                                             <img src={news.image} alt={news.category} loading="lazy" className="h-full lg:max-h-72 w-full object-cover object-center hover:scale-105 active:scale-105 transition duration-300" />
                                         </div>
